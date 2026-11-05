@@ -32,7 +32,7 @@ After deploying, open the service's domain and sign in. Add provider keys on the
 
 ### Implementation Details
 
-- **Tested from Railway:** Groq, Cerebras, Gemini, OpenRouter, Mistral, Cohere, GitHub Models, Hugging Face and others answered from a Railway service without blocking it, though that test had no real keys for most of them. Real completions came back through the router on the keyless Kilo and OVH routes.
+- **Tested from Railway:** Groq, Cerebras, Gemini, OpenRouter, Mistral, Cohere, GitHub Models, Hugging Face and others answered from a Railway service without blocking it, though that test had no real keys for most of them. Real completions came back through the router on keyless routes, including Kilo.
 - **Keyless routes:** a few providers work with no key but limit by IP address, and on a cloud host you may share that address with other services, so those limits can run out quickly. Your own keys avoid that.
 - **Keep `ENCRYPTION_KEY`:** it decrypts your stored provider keys. If it changes, you have to add them all again.
 - **Login variables:** `ADMIN_EMAIL` and `ADMIN_PASSWORD` apply only while no account exists. Later edits to them do nothing, and the log says so on each boot. Change your password in the dashboard, or use the one-time reset code it prints to the deploy logs.

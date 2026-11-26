@@ -1,1 +1,1 @@
-FROM ghcr.io/tashfeenahmed/freellmapi:v0.16.42
+FROM ghcr.io/tashfeenahmed/freellmapi:v0.16.44
